@@ -1,0 +1,7 @@
+
+ AI_AGENT : a boot.dev project that uses Gemini AI. Please feel free
+ to use it as you like.
+
+ Usage:		main.py "prompt" [-options]
+
+ Options: 	--verbose	
