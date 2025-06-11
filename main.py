@@ -29,6 +29,7 @@ def main():
                 print(f.read())
             sys.exit(1)
         parameter = Parameters(sys.argv[2])
+        user_prompt = sys.argv[1]
     elif len(sys.argv)>1:
         user_prompt = sys.argv[1]
     else:
@@ -51,6 +52,7 @@ def main():
                 print(f"User prompt: {user_prompt}")
                 print(f"Prompt tokens: {prompt_tokens}")
                 print(f"Response tokens: {response_tokens}")
+                print("...")
     print(response.text)
 
 
