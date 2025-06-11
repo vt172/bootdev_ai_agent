@@ -1,4 +1,4 @@
-import os, sys, pathlib
+import os, sys
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -42,7 +42,7 @@ def main():
 
     print("...")
     response = client.models.generate_content(model=model,contents=messages)
-    print(response.text)
+
     if parameter:
         match parameter:
             case Parameters.VERBOSE:
@@ -51,6 +51,7 @@ def main():
                 print(f"User prompt: {user_prompt}")
                 print(f"Prompt tokens: {prompt_tokens}")
                 print(f"Response tokens: {response_tokens}")
+    print(response.text)
 
 
 if __name__ == "__main__":
